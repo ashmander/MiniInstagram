@@ -9,28 +9,45 @@
         android:orientation="vertical">
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="350dp" />
+            android:layout_height="350dp"
+            android:id="@+id/image_img"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="fecha"
-            android:textSize="25sp"/>
+            android:textSize="25sp"
+            android:id="@+id/date_tv"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="laksdjfñlaskdfjñalskdfjañlskdjfañlskdjfñalskdjfñlaskdjfñlaskdjfñaalñsdkfjañlskdjfañlskdjfañlskdjfañlskdjfñalskdjfñalskdjfañlsdkjfañlsdkfjañlskdjfañlskdjfañlskdfjañsldkfjañlskdfj"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:id="@+id/paragraph_tv"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <ImageView
                 android:layout_width="60dp"
-                android:layout_height="60dp" />
+                android:layout_height="60dp"
+                android:background="@drawable/like"
+                android:backgroundTint="#DDD"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/like_img"/>
             <TextView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginLeft="250dp"/>
+                android:layout_marginLeft="180dp"
+                android:text="Views"
+                android:paddingTop="20dp"
+                android:id="@+id/views_tv"/>
         </LinearLayout>
     </LinearLayout>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/delete"
+        android:backgroundTint="#DDD"
+        android:layout_alignParentRight="true"
+        android:id="@+id/delete_btn"/>
 </RelativeLayout>
